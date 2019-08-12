@@ -1,0 +1,14 @@
+<div class="input-group">
+      <h1>{{label}}</h1>
+    <span class="input-group-btn" id="basic-addon3">
+      <button class="btn btn-secondary" (click)="handleValue(-5)">
+        <i class="mdi mdi-minus primary"></i>
+      </button>
+    </span>
+    <input #txtProgress type="number" class="form-control" id="basic-url" name='porcentaje' aria-describedby="basic-addon3" [(ngModel)]="porcentaje" (ngModelChange) = 'onChange($event)'>
+    <span class="input-group-btn" id="basic-addon3">
+      <button class="btn btn-secondary" (click)="handleValue(+5)">
+        <i class="mdi mdi-plus primary"></i>
+      </button>
+    </span>
+</div>
