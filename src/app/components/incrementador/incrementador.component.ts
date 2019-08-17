@@ -14,11 +14,10 @@ export class IncrementadorComponent implements OnInit {
   @Output() cambioValor: EventEmitter<number> = new EventEmitter
 
   constructor() {
-    console.log( this.label)
    }
 
   ngOnInit() {
-    console.log( this.label, 'oninit')
+
   }
   onChange (event: number) {
     let elemtHtml = document.getElementsByName('porcentaje')[0]
